@@ -1,37 +1,76 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #111827;
-    color: white;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 100vh;
-    margin: 0;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.container {
-    text-align: center;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0f172a;
+    color:white;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
 }
 
-.ip-box {
-    margin: 20px 0;
-    padding: 20px;
-
-    background: #1f2937;
-
-    border-radius: 10px;
-
-    font-size: 28px;
-    font-weight: bold;
+.container{
+    width:100%;
+    max-width:800px;
 }
-button {
-    border: none;
-    padding: 12px 20px;
 
-    border-radius: 8px;
-    cursor: pointer;
+h1{
+    text-align:center;
+    margin-bottom:10px;
+}
 
-    font-size: 16px;
+.subtitle{
+    text-align:center;
+    color:#94a3b8;
+    margin-bottom:30px;
+}
+
+.card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:16px;
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+.ip-address{
+    font-size:2rem;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+button{
+    padding:12px 18px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    margin-bottom:30px;
+}
+
+.info{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.info div{
+    background:#334155;
+    padding:15px;
+    border-radius:10px;
+}
+
+.info span{
+    display:block;
+    color:#cbd5e1;
+    margin-bottom:5px;
 }
