@@ -40,7 +40,7 @@ function copyIp() {
     navigator.clipboard.writeText(ip);
 
     const button =
-        document.querySelector("button");
+        document.querySelector("#btn-copy");
 
     button.textContent = "Copied!";
 
