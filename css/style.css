@@ -57,6 +57,10 @@ h1{
     margin-bottom:30px;
 }
 
+.btn-show-ip{
+    display: inline;
+}
+
 .card{
     background:#1e293b;
     padding:30px;

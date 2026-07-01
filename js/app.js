@@ -100,6 +100,5 @@ function loadOperatingSystem() {
         os;
 }
 
-loadIpData();
 loadBrowserInfo();
 loadOperatingSystem();
