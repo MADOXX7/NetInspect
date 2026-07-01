@@ -13,6 +13,10 @@ body{
     padding:20px;
 }
 
+a:visited{
+    color: inherit;
+}
+
 .container{
     width:100%;
     max-width:1000px;
@@ -55,6 +59,10 @@ h1{
     text-align:center;
     color:#94a3b8;
     margin-bottom:30px;
+}
+
+.btn-show-ip{
+    display: inline;
 }
 
 .card{

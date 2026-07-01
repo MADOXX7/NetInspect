@@ -1,132 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>NetInspect Network Tools</title>
 
-    <meta name="description"
-          content="Check your public IP address, location, ISP and network information instantly.">
+    <meta
+      name="description"
+      content="Check your public IP address, location, ISP and network information instantly."
+    />
 
-    <meta name="keywords"
-          content="ip checker, my ip, public ip, ip lookup">
+    <meta name="keywords" content="ip checker, my ip, public ip, ip lookup" />
 
-    <meta name="author"
-          content="Madoxx7">
+    <meta name="author" content="Madoxx7" />
 
-    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="./index.html">NetInspect</a>
+        </div>
 
+        <ul class="nav-links">
+          <li><a href="index.html">IP Checker</a></li>
+          <li><a href="dns.html">DNS Lookup</a></li>
+          <li><a href="#">WHOIS</a></li>
+          <li><a href="#">Tools</a></li>
+        </ul>
+      </nav>
+    </header>
     <main class="container">
+      <h1>NetInspect Network Tools</h1>
 
-        <header>
-            <nav class="navbar">
+      <p class="subtitle">
+        Inspect your connection, IP address and network information.
+      </p>
 
-                <div class="logo">
-                    <a href="./index.html">NetInspect</a>
-                </div>
+      <section class="card">
+        <h2>Your IP Address</h2>
+        <div id="ip" class="ip-address">Loading...</div>
+        
+        <button id="btn-show-ip">Discover your ip</button>
+        <button id="btn-copy" onclick="copyIp()">Copy IP</button>
 
-                <ul class="nav-links">
-                    <li><a href="index.html">IP Checker</a></li>
-                    <li><a href="dns.html">DNS Lookup</a></li>
-                    <li><a href="#">WHOIS</a></li>
-                    <li><a href="#">Tools</a></li>
-                </ul>
+        <div class="info">
+          <div>
+            <span>Country</span>
+            <strong id="country">-</strong>
+          </div>
 
-            </nav>
-        </header>
+          <div>
+            <span>Region</span>
+            <strong id="region">-</strong>
+          </div>
 
-        <h1>NetInspect Network Tools</h1>
+          <div>
+            <span>City</span>
+            <strong id="city">-</strong>
+          </div>
 
-        <p class="subtitle">
-            Inspect your connection, IP address and network information.
-        </p>
+          <div>
+            <span>ISP</span>
+            <strong id="isp">-</strong>
+          </div>
 
-        <section class="card">
+          <div>
+            <span>Browser</span>
+            <strong id="browser">-</strong>
+          </div>
 
-            <h2>Your IP Address</h2>
+          <div>
+            <span>Operating System</span>
+            <strong id="os">-</strong>
+          </div>
+        </div>
+      </section>
 
-            <div id="ip" class="ip-address">
-                Loading...
-            </div>
+      <section class="future-tools">
+        <h2>More Network Tools</h2>
 
-            <button onclick="copyIp()">
-                Copy IP
-            </button>
+        <div class="tools-grid">
+          <div class="tool-card">DNS Lookup</div>
 
-            <div class="info">
+          <div class="tool-card">WHOIS Lookup</div>
 
-                <div>
-                    <span>Country</span>
-                    <strong id="country">-</strong>
-                </div>
+          <div class="tool-card">SSL Checker</div>
 
-                <div>
-                    <span>Region</span>
-                    <strong id="region">-</strong>
-                </div>
-
-                <div>
-                    <span>City</span>
-                    <strong id="city">-</strong>
-                </div>
-
-                <div>
-                    <span>ISP</span>
-                    <strong id="isp">-</strong>
-                </div>
-
-                <div>
-                    <span>Browser</span>
-                    <strong id="browser">-</strong>
-                </div>
-
-                <div>
-                    <span>Operating System</span>
-                    <strong id="os">-</strong>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="future-tools">
-
-            <h2>More Network Tools</h2>
-
-            <div class="tools-grid">
-
-                <div class="tool-card">
-                    DNS Lookup
-                </div>
-
-                <div class="tool-card">
-                    WHOIS Lookup
-                </div>
-
-                <div class="tool-card">
-                    SSL Checker
-                </div>
-
-                <div class="tool-card">
-                    Ping Tool
-                </div>
-
-            </div>
-
-        </section>
-
+          <div class="tool-card">Ping Tool</div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>© 2026 NetInspect</p>
+      <p>© 2026 NetInspect</p>
     </footer>
 
     <script src="js/app.js"></script>
-
-</body>
+  </body>
 </html>
